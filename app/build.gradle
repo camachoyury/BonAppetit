@@ -28,6 +28,7 @@ dependencies {
     testCompile 'junit:junit:4.12'
     // facebook dependency
     compile 'com.facebook.android:facebook-android-sdk:[4,5)'
+    compile 'com.android.support.constraint:constraint-layout:1.0.1'
 
 }
 apply plugin: 'com.google.gms.google-services'
