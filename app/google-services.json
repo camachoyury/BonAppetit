@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "687377113371",
+    "firebase_url": "https://firesnap-9eed8.firebaseio.com",
+    "project_id": "firesnap-9eed8",
+    "storage_bucket": "firesnap-9eed8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:687377113371:android:d9254ffde082d1c7",
+        "android_client_info": {
+          "package_name": "org.camachoyury.bonappetit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "687377113371-ot1d4rmpvmn7r06ho3e1qrf2534jh1gg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.camachoyury.bonappetit",
+            "certificate_hash": "313921d0e3b93b79c65c1aa8341e5c3b3583d33d"
+          }
+        },
+        {
+          "client_id": "687377113371-qlbl3nkloipqd4uth04k60jb9iomvgbm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyABoFPuRWSv5JXNuG1ZmK3iTZoU2buiFf4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "687377113371-qlbl3nkloipqd4uth04k60jb9iomvgbm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
