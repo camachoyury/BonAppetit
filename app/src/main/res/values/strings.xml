@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">BonAppetit</string>
     <string name="facebook_app_id">1855466591359919</string>
+    <string name="login_fb_cancel">the login with facebook has been cancel</string>
 </resources>

@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "687377113371-qh9ooo271ffrqmrf1e91pmdk8h5basra.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.camachoyury.bonappetit",
+            "certificate_hash": "353437ee5e084d08dcaff0a58412efc5cb5d3192"
+          }
+        },
+        {
           "client_id": "687377113371-ot1d4rmpvmn7r06ho3e1qrf2534jh1gg.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
