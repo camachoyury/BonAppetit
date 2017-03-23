@@ -1,0 +1,11 @@
+
+Rsquid:S1068"=Remove this unused "firebaseAuthStateListener" private field.(ÓøØÜ
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ïŞâÇ
+}squid:S1450"hRemove the "firebaseAuthStateListener" field and declare it as a local variable in the relevant methods.(ÓøØÜ
+›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™¦‹ùşÿÿÿÿ
+psquid:S1450"[Remove the "firebaseAuth" field and declare it as a local variable in the relevant methods.(“ø
+osquid:S1450"ZRemove the "loginButton" field and declare it as a local variable in the relevant methods.(®¤½¯
+hsquid:MaximumInheritanceDepth"<This class has 8 parents which is greater than 5 authorized.(·¡ïõøÿÿÿÿ
+›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(È“©úÿÿÿÿ
+dsquid:UselessImportCheck"CRemove this unused import 'android.support.design.widget.Snackbar'.( À®p
+Lsquid:S1068"0Remove this unused "firebaseAuth" private field.(œî¨°8™…ŠÛ¯+

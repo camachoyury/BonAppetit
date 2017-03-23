@@ -7,15 +7,22 @@ import android.support.annotation.Nullable;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 
+import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
 import com.facebook.FacebookCallback;
 import com.facebook.FacebookException;
 import com.facebook.login.LoginResult;
 import com.facebook.login.widget.LoginButton;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthCredential;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FacebookAuthProvider;
 import com.google.firebase.auth.FirebaseAuth;
 
 import org.camachoyury.bonappetit.MainActivity;
 import org.camachoyury.bonappetit.R;
+import org.camachoyury.bonappetit.YLog;
 
 /**
  * Created by yury on 3/16/17.
@@ -23,10 +30,14 @@ import org.camachoyury.bonappetit.R;
 
 public class LoginActivity  extends AppCompatActivity {
 
+
     private LoginButton loginButton;
     CallbackManager callbackManager;
     private FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener firebaseAuthStateListener;
+    public String TAG = "LoginActivity";
+    private FirebaseAuth mAuth;
+
 
     @Override
     protected void onCreate(@Nullable final Bundle savedInstanceState) {
@@ -34,7 +45,7 @@ public class LoginActivity  extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         callbackManager = CallbackManager.Factory.create();
-
+        mAuth = FirebaseAuth.getInstance();
         loginButton = (LoginButton) findViewById(R.id.fb_button);
         loginButton.registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
             @Override
@@ -45,13 +56,14 @@ public class LoginActivity  extends AppCompatActivity {
             @Override
             public void onCancel() {
 //                UtilsView.showLongMessage(, this, R.string.login_fb_cancel);
-
             }
 
             @Override
             public void onError(FacebookException error) {
 
             }
+
+
         });
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -78,4 +90,20 @@ public class LoginActivity  extends AppCompatActivity {
     }
 
 
+    private void handleFacebookAccessToken(AccessToken accessToken){
+
+        AuthCredential credential = FacebookAuthProvider.getCredential(accessToken.getToken());
+        mAuth.signInWithCredential(credential).addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                YLog.debug("TAG","signInWithCredential:onComplete:" + task.isSuccessful());
+
+                if (!task.isSuccessful()){
+
+                    UtilsView.showLongMessage(findViewById(R.id.login_layout),LoginActivity.this,R.string.error_login);
+                }
+            }
+        });
+
+    }
 }

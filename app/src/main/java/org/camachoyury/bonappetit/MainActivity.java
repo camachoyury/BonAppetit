@@ -7,6 +7,7 @@ import android.view.View;
 
 import com.facebook.AccessToken;
 import com.facebook.login.LoginManager;
+import com.google.firebase.auth.FirebaseAuth;
 
 import org.camachoyury.bonappetit.mvp.activities.LoginActivity;
 
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
     }
     public void logout(View view){
 
+        FirebaseAuth.getInstance().signOut();
         LoginManager.getInstance().logOut();
         goLoginScreen();
 
