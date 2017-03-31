@@ -3,4 +3,5 @@
     <string name="facebook_app_id">1855466591359919</string>
     <string name="login_fb_cancel">the login with facebook has been cancel</string>
     <string name="error_login">an error occurred, please try again</string>
+    <string name="title_activity_main">MainActivity</string>
 </resources>

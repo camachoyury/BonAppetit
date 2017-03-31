@@ -26,12 +26,16 @@ dependencies {
     })
     compile 'com.android.support:appcompat-v7:25.1.0'
     compile 'com.android.support:design:25.1.0'
+    compile 'com.android.support:support-v13:25.1.0'
+
     testCompile 'junit:junit:4.12'
     // facebook dependency
     compile 'com.facebook.android:facebook-android-sdk:[4,5)'
     compile 'com.android.support.constraint:constraint-layout:1.0.1'
     compile 'com.google.firebase:firebase-core:10.2.0'
     compile 'com.google.firebase:firebase-auth:10.2.0'
+    compile 'com.google.firebase:firebase-storage:10.2.0'
+    compile 'com.neurenor:permission-helper:1.0.1'
 
 }
 apply plugin: 'com.google.gms.google-services'

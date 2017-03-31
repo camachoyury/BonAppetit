@@ -1,11 +1,13 @@
 
-Rsquid:S1068"=Remove this unused "firebaseAuthStateListener" private field.(ÓøØÜ
-`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ïŞâÇ
-}squid:S1450"hRemove the "firebaseAuthStateListener" field and declare it as a local variable in the relevant methods.(ÓøØÜ
-›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™¦‹ùşÿÿÿÿ
-psquid:S1450"[Remove the "firebaseAuth" field and declare it as a local variable in the relevant methods.(“ø
 osquid:S1450"ZRemove the "loginButton" field and declare it as a local variable in the relevant methods.(®¤½¯
+Rsquid:S1068"=Remove this unused "firebaseAuthStateListener" private field.(ÓøØÜ
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(™¦‹ùşÿÿÿÿ8¥”é¯+
+‚"squid:ClassVariableVisibilityCheck"OMake TAG a static final constant or non-public and provide accessors if needed.(åİó´8ùºàç¯+
+Lsquid:S1068"0Remove this unused "firebaseAuth" private field.(“ø8æô´å¯+
+}squid:S1450"hRemove the "firebaseAuthStateListener" field and declare it as a local variable in the relevant methods.(ÓøØÜ
+hsquid:UnusedPrivateMethod">Remove this unused private "handleFacebookAccessToken" method.(Õ€ÏŞ8•û™è¯+
+psquid:S1450"[Remove the "firebaseAuth" field and declare it as a local variable in the relevant methods.(“ø
+ksquid:S00116"NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(åİó´8ùºàç¯+
+¢squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(È“©úÿÿÿÿ8•û™è¯+
 hsquid:MaximumInheritanceDepth"<This class has 8 parents which is greater than 5 authorized.(·¡ïõøÿÿÿÿ
-›squid:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(È“©úÿÿÿÿ
-dsquid:UselessImportCheck"CRemove this unused import 'android.support.design.widget.Snackbar'.( À®p
-Lsquid:S1068"0Remove this unused "firebaseAuth" private field.(œî¨°8™…ŠÛ¯+
+`squid:CommentedOutCodeLine"<This block of commented-out lines of code should be removed.(ïŞâÇ

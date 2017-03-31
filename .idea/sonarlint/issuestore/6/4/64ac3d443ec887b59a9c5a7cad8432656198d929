@@ -1,0 +1,7 @@
+
+hsquid:MaximumInheritanceDepth"<This class has 8 parents which is greater than 5 authorized.(¤ä‚üÿÿÿÿ
+\squid:UselessImportCheck"4Remove this unused import 'android.graphics.Bitmap'.(¾ì8û³“Ú±+
+asquid:UselessImportCheck"8Remove this unused import 'android.provider.MediaStore'.(ãçšþ8û³“Ú±+
+xsquid:UselessImportCheck"ORemove this unused import 'android.support.design.widget.FloatingActionButton'.(„Ÿ¹¼8éç“Ú±+
+Dsquid:S1185"(Remove this method to simply inherit it.(ŸŒ¹Ñ8ñ©¨Ú±+
+ksquid:UselessImportCheck"CRemove this unused import 'android.support.design.widget.Snackbar'.( À®p8éç“Ú±+
