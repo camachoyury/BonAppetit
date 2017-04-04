@@ -46,7 +46,6 @@ public class WallActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
-
     public void logout(View view){
 
         FirebaseAuth.getInstance().signOut();
